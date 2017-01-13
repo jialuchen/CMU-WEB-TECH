@@ -1,0 +1,165 @@
+	{
+		font-family: Helvetica,Arial,sans-­serif;
+		color:black;
+	}
+	header{
+		background-color: rgb(100,100,100);
+		text-align: center;
+		width: 100%;
+	}
+	h1
+	{
+	    font-size: 2rem;
+	    color:white !important;
+	 }
+	body {
+		display: flex;
+	}	
+	main {
+		background-color: rgb(220, 220, 220);
+		padding: 0.5rem;
+	}
+	.reading-dog {
+	 	background-image: url("reading_dog.jpg");
+	 }
+	h2
+	    {
+	        font-size: 1.5rem;
+	        color:rgb(185,85,25);
+	    }
+	            
+	            a:link
+	            {
+	            	color:blue;
+	            	text-decoration: none;
+
+	            }
+	            a:visited
+	            {
+	            	color:blue;
+	            }
+	            a:hover
+	            {
+	            	text-decoration: underline;
+	            }
+	            a:active
+	            {
+	            	color:blue;
+	            }
+	            nav{
+	            	background-color: rgb(180,180,180);
+	            }
+	            nav ul{
+	            	display: block;
+	            	list-style-type: none;	            		            	
+	            }
+	            nav li{
+	            	margin:0.5rem;	            }
+	            nav a:link{
+              color:black;
+	            }
+              nav a:visited
+	            {
+	            	color:black;
+	            }
+	            nav a:hover{
+                   color:white;
+	            }
+	            nav a:active
+	            {
+	               color:black;
+	            }
+
+	#section-quoteoftheday blockquote{
+			font-style: italic;
+	}
+	#section-whatreading table{
+		border-collapse: collapse;
+		border: 1px solid rgb(184,204,228);
+	}
+	th{
+		border: 1px solid rgb(184,204,228);
+		background: linear-gradient(180deg, rgb(100,100,100), black);
+		color: white;
+		text-align: left;
+	}
+
+	tbody tr:nth-of-type(even) {
+		background-color: white;
+		border: 1px solid rgb(184,204,228);
+	}
+
+	tbody tr:nth-of-type(odd) {
+		background-color: rgb(197,217,241);
+		border: 1px solid rgb(184,204,228);
+
+	}
+
+	tbody td:nth-of-type(1){
+		text-align: left;
+		border: 1px solid rgb(184,204,228);
+	}
+	tbody td:nth-of-type(2){
+		text-align: left;
+		border: 1px solid rgb(184,204,228);
+	}
+	tbody td:nth-of-type(3){
+		text-align: right;
+		border: 1px solid rgb(184,204,228);
+	}
+	tbody td:nth-of-type(4){
+		text-align: right;
+		border: 1px solid rgb(184,204,228);
+	}
+
+	tbody tr:hover {
+		transition-property: background-color;
+		transition-duration: 2s;
+		transition-timing-function: ease;
+		background-color: yellow;
+	}
+	#section-contact div{
+		margin: 0.5rem;
+	}
+	#section-contact span{
+		color: red;
+	}
+	#section-contact input[type=submit]{
+		background-color: rgb(100,100,100);
+		color:white;
+			}
+	#section-contact input[type=reset]{
+		background-color: rgb(100,100,100);
+		color:white;
+	}
+	footer{
+		width:100%;
+		text-align: center;
+		background-color: rgb(100,100,100);
+		color: white;
+	}
+	            @media screen and (min-width: 601px) {
+	            	nav {
+	            		width: 25%;
+	            		flex: 1;
+	            		order: 2;
+	            	}
+	            	main {
+	            		width: 75%;
+	            		flex: 2;
+	            		order: 3;
+	            	}
+	            	footer {
+	            		order: 4;
+	            	}
+	            	body {
+	            		flex-direction: row;
+	            		flex-wrap: wrap;
+	            	}
+	            }
+	            @media screen and (max-width: 600px) {
+	            	body {
+	            		flex-direction: column;
+	            		width: 100%;
+	            	}
+	            }

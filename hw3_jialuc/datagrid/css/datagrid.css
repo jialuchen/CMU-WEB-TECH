@@ -1,0 +1,42 @@
+table {
+	border-collapse: collapse;
+}
+
+caption span[clickable=disabled] {
+	color: #d4d4d4;
+}
+caption span[clickable=clickable]:hover {
+	color: #0000FF;
+	cursor: pointer;
+}
+thead {
+	background: linear-gradient(180deg, #ffffff, #d3d3d3);
+	text-align: left;
+	color: #000000;
+}
+
+tr, td, th {
+	border: 1px solid #d3d3d3;
+	padding: 10px 5px;
+}
+
+thead th {
+	color: #000000;
+}
+
+thead th:hover {
+	color: #0000FF;
+	cursor: pointer;
+}
+
+table tr:nth-child(odd) {
+	background-color: rgba(255,255,255,0.2);
+}
+
+table tr:nth-child(even) {
+	background-color: rgba(200,200,200,0.2);
+}
+
+td[sel=sel] {
+	background-color: rgba(0,90,190,0.1);
+}

@@ -1,0 +1,32 @@
+<div class="panel panel-success" ng-cloak ng-show="submittedAddresses.length > 0">
+    <div class="panel-heading">
+        <h3 class="panel-title">My Contact List</h3>
+    </div>
+    <div class="panel-body">
+        <table id="addressTable" class="table table-hover table-bordered">
+            <thead>
+            <tr>
+                <th></th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="address in submittedAddresses">
+                <td>
+                        <span class="btn btn-lg" ng-click="removeAddress($index, address.key)">
+                            <span class="glyphicon glyphicon-remove-sign"></span>
+                        </span>
+                </td>
+                <td><a style="cursor: pointer;" ng-click="edit(address.key)"> {{ address.firstName + " " +
+                    address.lastName}}</a></td>
+                <td>{{ address.email }}</td>
+                <td>{{ address.phoneNumber }}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<button ng-click="add()">Add Contact</button>

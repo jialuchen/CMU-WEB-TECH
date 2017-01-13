@@ -1,0 +1,31 @@
+{
+		font-family: Helvetica,Arial,sans-­serif;
+		color:black;
+	}
+header{
+	padding: 0.5rem;
+	text-align: center;
+}
+body{
+	padding: 0.5rem;
+}
+h3{
+	color: rgb(100,150,255);
+}
+#accordion {
+	display: inline-block;
+	float: left;
+	width: calc(50% - 20px);
+	margin: 10px;
+}
+#slide {
+	display: inline-block;
+	float: right;
+	width: calc(50% - 20px);
+	margin: 10px;
+}
+
+#img {
+	float: right;
+	width: 100%
+}
